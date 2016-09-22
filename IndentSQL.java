@@ -2,7 +2,7 @@
 /*
  * This is supposed to take a .sql file a indent it, sort of SAX style...
  * Why bother?
- * To bother understand big SQL files
+ * To better understand big SQL files
  */
 
 import java.io.BufferedReader;
