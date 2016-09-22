@@ -3,6 +3,25 @@
  * This is supposed to take a .sql file a indent it, sort of SAX style...
  * Why bother?
  * To better understand big SQL files
+ This file will take a .sql and output stuff like: 
+78|	|1|15|sdr_data.pd_age_ranges | insert 
+81|	|0|16|sdr_data.pd_age_ranges | insert 
+84|	|1|17|sdr_data.pd_age_ranges | insert 
+88|	|0|2|sdr_data.pd_cpt_2_ccs_map | insert 
+92|	|______0|2|sdr_data.pd_icd9_clinical_grouper_codes | drop 
+93|	|1|3|sdr_data.pd_icd9_clinical_grouper_codes | create 
+97|	|______0|4|sdr_data.pd_icd9_clinical_grouper_codes | update 
+99|	|1|5|sdr_data.pd_icd9_clinical_grouper_codes | update 
+101|	|______0|2|sdr_data.pd_hp_all | drop 
+102|	|1|3|sdr_data.pd_hp_all | create 
+120|	|______0|4|sdr_data.pd_pc_summary | join 
+124|	|_________0|2|sdr_data.pd_pharma_bc | drop 
+126|	|____________0|2|sdr_data.pd_pharma_summary | drop 
+127|	|_________1|3|sdr_data.pd_pharma_summary | create 
+
+ 
+ 
+ 
  */
 
 import java.io.BufferedReader;
